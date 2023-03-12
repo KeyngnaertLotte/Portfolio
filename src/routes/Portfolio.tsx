@@ -2,10 +2,10 @@ import AppNavigation from "../components/AppNavigation";
 
 export default function Portfolio() {
   return (
-    <main className="flex h-screen justify-end bg-black bg-[url('../assets/img/BgHome.jpg')] bg-no-repeat align-middle">
-      <div className="flex flex-col justify-center align-middle p-8 w-2/4">
-        <h1 className='text-white'>Lotte Keyngnaert</h1>
-        <AppNavigation />
+    <main className="h-screen bg-black w-full flex flex-col items-center p-4">
+      <div className="flex flex-row justify-around w-9/12">
+        <h1 className='text-white text-4xl pb-5 font-heading font-bold w-11/12'>Lotte Keyngnaert</h1>
+        <AppNavigation/>
       </div>
     </main>
   );
