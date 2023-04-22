@@ -7,14 +7,14 @@ export default () => {
   const onPage = (id: string) => {
     console.log(id)
     if (currentPage === id) {
-      return 'm-3 pb-1 border-b-2 border-cyan-400 text-lg '
+      return 'm-3 pb-1 border-b-2 border-accent text-lg '
     } else {
-      return 'm-3 pb-1 border-b-2 border-black hover:border-cyan-400 text-lg text-slate-500 hover:text-white'
+      return 'm-3 pb-1 border-b-2 border-black hover:border-accent text-lg text-white/50 hover:text-white'
     }
   }
 
   return (
-    <div className="flex flex-row text-white w-3/6 justify-between items-center">
+    <div className="flex flex-row text-white w-3/6 justify-between items-center font-body">
       <Link to={'/'} className={onPage('')}>
         Home
       </Link>

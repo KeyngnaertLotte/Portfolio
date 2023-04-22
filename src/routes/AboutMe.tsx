@@ -1,4 +1,4 @@
-import AppAboutMe from "../components/AppAboutMe";
+import AppAboutMe from "../components/AboutMe/AppAboutMe";
 import AppNavigation from "../components/AppNavigation";
 
 export default function AboutMe() {
