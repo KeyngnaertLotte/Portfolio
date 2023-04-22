@@ -3,9 +3,28 @@ module.exports = {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
     fontFamily: {
-      'heading': ['IBM Plex Sans', 'sans-serif', 'Arial', 'Helvetica','sans-serif'],
+      heading: [
+        'gravesend-sans',
+        'Arial',
+        'Helvetica',
+        'sans-serif',
+      ],
+      body: [
+        'segoe ui',
+        'sans-serif',
+        'Arial',
+        'Helvetica',
+      ],
+      special: [
+        'Highest Praise',
+        'gravesend-sans',
+      ],
     },
-    extend: {},
+    extend: {
+      colors: {
+        accent: '#d4af37',
+      },
+    },
   },
   plugins: [],
 }

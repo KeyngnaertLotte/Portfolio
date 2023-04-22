@@ -1,12 +1,21 @@
-import AppNavigation from "../components/AppNavigation";
+import AppNavigation from '../components/AppNavigation'
+import AppComputervaardigheden from '../components/CV/AppComputervaardigheden'
+import AppOpleiding from '../components/CV/AppOpleiding'
+import AppWerkervaring from '../components/CV/AppWerkervaring'
+
 
 export default function Cv() {
   return (
-    <main className="h-screen bg-black w-full flex flex-col items-center p-4">
-      <div className="flex flex-row justify-around w-9/12">
-        <h1 className='text-white text-4xl pb-5 font-heading font-bold w-11/12'>Lotte Keyngnaert</h1>
-        <AppNavigation/>
+    <main className="flex h-full w-full flex-col items-center bg-black p-4">
+      <div className="flex w-9/12 flex-row justify-around">
+        <h1 className="w-11/12 pb-5 font-heading text-4xl font-bold text-white">
+          Lotte Keyngnaert
+        </h1>
+        <AppNavigation />
       </div>
+        <AppOpleiding />
+        <AppWerkervaring />
+        <AppComputervaardigheden/>
     </main>
-  );
+  )
 }
