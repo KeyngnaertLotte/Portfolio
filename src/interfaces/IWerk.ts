@@ -4,4 +4,5 @@ export interface iWerk {
     place?: string
     website?: string
     description: string
+    direction: string
 }

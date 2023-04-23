@@ -1,69 +1,128 @@
 import { useState } from 'react'
 import dogGlasses from '../../assets/img/HondEnBril.jpg'
-import { Languages, Code2, Paintbrush, LayoutGrid } from 'lucide-react'
+import { Languages, Code2, Paintbrush, LayoutGrid, Layout } from 'lucide-react'
 
 export default () => {
   return (
-    <div className=" grid h-screen w-11/12 grid-cols-4 content-center items-center gap-6 text-white">
-      <h2 className="col-span-4 mb-8 justify-self-center font-heading text-4xl font-medium">
+    // <div className=" grid h-screen w-11/12 grid-cols-2 place-content-center  gap-6 text-white">
+    //   <h2 className="col-span-full mb-8 justify-self-center font-heading text-4xl font-medium">
+    //     Computervaardigheden & Taalkennis
+    //   </h2>
+    //   <div className='grid grid-cols-2 col-start-1 row-start-2 w-1/2  justify-self-end'>
+    //     <h3 className="font-heading text-2xl col-span-2 font-medium flex flex-row gap-2 mb-5"><Languages className='stroke-white'/>Taalkennis</h3>
+    //     <div className='col-span-2 mb-5'>
+    //       <p className="font-body">Nederlands (moedertaal)</p>
+    //       <p className="font-body font-light">vloeiend</p>
+    //     </div>
+    //     <div className=' col-start-1'>
+    //       <p className="font-body">Engels</p>
+    //       <p className="font-body font-light">vloeiend</p>
+    //     </div>
+    //     <div className=' col-start-2'>
+    //       <p className="font-body">Frans</p>
+    //       <p className="font-body font-light">basis</p>
+    //     </div>
+
+    //   </div>
+    //   <div className='col-start-1 row-start-3 w-1/2 justify-self-end'>
+    //     <h3 className="font-heading text-2xl  font-medium flex flex-row gap-2 mb-5"><Paintbrush className='stroke-white'/>Adobe Apps</h3>
+    //     <p>Photoshop, Illustrator, Indesign, After Effects, Xd, Premiere Pro</p>
+
+    //   </div>
+    //   <div className='col-start-2 row-start-2 w-1/2'>
+    //     <h3 className="font-heading text-2xl font-medium flex flex-row gap-2 mb-5"><Code2 className='stroke-white'/>Codeertalen</h3>
+    //     <p>Html, css, Javascript, Typescript, Python, C#, Typescript, SQL en beetje C++</p>
+
+    //   </div>
+    //   <div className='col-start-2 row-start-3 w-1/2'>
+    //     <h3 className="font-heading text-2xl  font-medium flex flex-row gap-2 mb-5"><LayoutGrid className='stroke-white'/>Andere Apps</h3>
+    //     <p>Visual Studio Code, Visual Studio, Atom, MySQL, Atom, Word, Excel, PowerPoint</p>
+
+    //   </div>
+    // </div>
+    // <div className='h-full w-11/12 mt-8 text-white flex flex-col items-center'>
+    //   <h2 className='text-center w-full mb-8 font-heading text-4xl font-medium'>Computervaardigheden & Taalkennis</h2>
+    //   <div className=' w-1/2 grid grid-cols-2 gap-8'>
+    //     <div className='grid grid-cols col-start-1 row-start-1 p-3'>
+    //       <h3 className="font-heading text-2xl col-span-2 font-medium gap-2 mb-5 flex flex-row items-center"><Languages className='stroke-white'/>Taalkennis</h3>
+    //       <p className='font-body col-start-1 row-start-2'>Nederlands (moedertaal)</p>
+    //       <p className="font-body font-light col-start-1 row-start-3 mb-4">vloeiend</p>
+    //       <p className='font-body col-start-1 row-start-4'>Engels</p>
+    //       <p className="font-body font-light col-start-1 row-start-5">vloeiend</p>
+    //       <p className='font-body col-start-2 row-start-4'>Frans</p>
+    //       <p className="font-body font-light col-start-2 row-start-5">basis</p>
+    //     </div>
+    //     <div className='col-start-1 row-start-2 p-3'>
+    //       <h3 className="font-heading text-2xl  font-medium gap-2 mb-5 flex flex-row items-center"><Paintbrush className='stroke-white'/>Adobe Apps</h3>
+    //       <p className='font-body'>Photoshop, Illustrator, Indesign, After Effects, Xd, Premiere Pro</p>
+    //     </div>
+    //     <div className='col-start-2 row-start-1 p-3'>
+    //       <h3 className="font-heading text-2xl  font-medium gap-2 mb-5 flex flex-row items-center"><Code2 className='stroke-white'/>Codeertalen</h3>
+    //       <p className='font-body'>Html, css, Javascript, Typescript, Python, C#, Typescript, SQL en beetje C++</p>
+    //     </div>
+    //     <div className='col-start-2 row-start-2 p-3'>
+    //       <h3 className="font-heading text-2xl  font-medium gap-2 mb-5 flex flex-row items-center"><LayoutGrid className='stroke-white'/>Andere Apps</h3>
+    //       <p className='font-body'>Visual Studio Code, Visual Studio, Atom, MySQL, Atom, Word, Excel, PowerPoint</p>
+    //     </div>
+    //   </div>
+    // </div>
+    <div className="flex h-full w-11/12 flex-col items-center text-white">
+      <h2 className=" m-8 text-center font-heading text-4xl font-medium">
         Computervaardigheden & Taalkennis
       </h2>
-      <div className="grid h-64 w-64 grid-cols-4 rounded-lg p-5 shadow-sm shadow-accent">
-        <Languages className="col-span-1 row-start-1" />
-        <h3 className="col-span-3 row-start-1 font-heading text-2xl font-medium">
-          Taalkennis
-        </h3>
-        <div className="col-span-4 row-start-2">
-          <p className="mt-4">Moedertaal: Nederlands</p>
-          <p className="mb-4 font-light ">Vloeiend</p>
+      <div className="flex h-auto w-3/5 flex-wrap justify-center">
+        <div className="m-5 h-52 w-2/5 rounded p-5 shadow shadow-accent">
+          <h3 className="col-span-2 mb-5 flex flex-row items-center gap-2 font-heading text-2xl font-medium">
+            <Languages className="stroke-white" />
+            Taalkennis
+          </h3>
+          <div className='grid grid-cols-2'>
+            <p className="col-span-full  font-body">
+              Nederlands (moedertaal)
+            </p>
+            <p className="col-start-1 row-start-3 mb-4 font-body font-light">
+              vloeiend
+            </p>
+            <p className="col-start-1 row-start-4 font-body">Engels</p>
+            <p className="col-start-1 row-start-5 font-body font-light">
+              vloeiend
+            </p>
+            <p className="col-start-2 row-start-4 font-body">Frans</p>
+            <p className="col-start-2 row-start-5 font-body font-light">
+              basis
+            </p>
+          </div>
         </div>
-        <div className="col-span-2 row-start-3">
-          <p className="mt-4 ">Engels</p>
-          <p className="mb-4 font-light ">Vloeiend</p>
+        <div className="m-5 h-52 w-2/5 rounded p-5 shadow shadow-accent">
+          <h3 className="mb-5 flex  flex-row items-center gap-2 font-heading text-2xl font-medium">
+            <Code2 className="stroke-white" />
+            Codeertalen
+          </h3>
+          <p className="font-body">
+            Html, css, Javascript, Typescript, Python, C#, Typescript, SQL en
+            beetje C++
+          </p>
         </div>
-        <div className="col-span-2 row-start-3">
-          <p className="mt-4 ">Frans</p>
-          <p className="mb-4 font-light ">Weinig</p>
+        <div className="m-5 h-52 w-2/5 rounded p-5 shadow shadow-accent">
+          <h3 className="mb-5 flex  flex-row items-center gap-2 font-heading text-2xl font-medium">
+            <Paintbrush className="stroke-white" />
+            Adobe Apps
+          </h3>
+          <p className="font-body">
+            Photoshop, Illustrator, Indesign, After Effects, Xd, Premiere Pro
+          </p>
+        </div>
+        <div className="m-5 h-52 w-2/5 rounded p-5 shadow shadow-accent">
+          <h3 className="mb-5 flex  flex-row items-center gap-2 font-heading text-2xl font-medium">
+            <LayoutGrid className="stroke-white" />
+            Andere Apps
+          </h3>
+          <p className="font-body">
+            Visual Studio Code, Visual Studio, Atom, MySQL, Atom, Word, Excel,
+            PowerPoint
+          </p>
         </div>
       </div>
-      <div className="h-64 w-64 rounded-lg p-5 shadow-sm shadow-accent grid grid-cols-4">
-        <Code2 className='col-span-1 row-start-1'/>
-        <h3 className="font-heading text-2xl font-medium col-span-3 row-start-1">
-          Codeertalen
-        </h3>
-        <p className="mt-4 col-span-4 row-start-2">
-          Html, Css, Javascript, Python, C#, beetje c++, React native
-        </p>
-      </div>
-      <div className="h-64 w-64 rounded-lg p-5 shadow-sm shadow-accent">
-        <Paintbrush />
-        <h3 className="font-heading text-2xl font-medium">
-          Adobe programma's
-        </h3>
-        <p className="mt-4">
-          Photoshop, Illustrator, Indesign, After Effects, Xd, Premiere Pro
-        </p>
-      </div>
-      <div className="h-64 w-64 rounded-lg p-5 shadow-sm shadow-accent">
-        <LayoutGrid />
-        <h3 className="font-heading text-2xl font-medium">
-          Andere programma's
-        </h3>
-        <p className="mt-4">
-          Visual studio code, Visual studio, Atom, Word, Excel, Powerpoint,
-          MySQL
-        </p>
-      </div>
-      {/* <img src={dogGlasses} alt="" className='w-10/12  justify-self-center rounded '/>
-      <div className='justify-self-start mr-10'>
-        <h3 className="font-heading font-medium text-2xl">Computervaardigheden</h3>
-        <p className='mt-4 '>Codeertalen</p>
-        <p className="font-light mb-4">Html, Css, Javascript, Python, C#, beetje c++, React native</p>
-        <p className='mt-4'>Adobe programma's</p>
-        <p className="font-light mb-4">Photoshop, Illustrator, Indesign, After Effects, Xd, Premiere Pro</p>
-        <p className='mt-4'>Andere programma's</p>
-        <p className="font-light mb-4">Visual studio code, Visual studio, Atom, Word, Excel, Powerpoint, MySQL</p>
-      </div> */}
     </div>
   )
 }
