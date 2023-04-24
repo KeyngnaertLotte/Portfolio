@@ -8,6 +8,7 @@ import AppWerkervaring from '../components/CV/AppWerkervaring'
 export default function Cv() {
   const [active, setActive] = useState(0)
 
+  // TODO: set timer to change active every 5 seconds
   
   return (
     <main className="flex h-screen w-full flex-col items-center bg-black p-4">

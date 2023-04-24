@@ -20,3 +20,10 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <RouterProvider router={router} />
   </React.StrictMode>,
 )
+
+// TODO: Add a 404 page
+// TODO: Check img sizes + loading
+// TODO: Check how page loading (lighthouse)
+// TODO: Check if all links work
+// TODO: Check if all images have alt text
+// TODO: Check if all images have title text
