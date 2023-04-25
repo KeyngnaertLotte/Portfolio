@@ -27,6 +27,12 @@ module.exports = {
       gridTemplateRows: {
         'layout': 'repeat(2, minmax(0, 0.4fr))',
       },
+      blur: {
+        'xs' : '2px',
+      },
+      brightness: {
+        25: '.25',
+      }
     },
   },
   plugins: [],
