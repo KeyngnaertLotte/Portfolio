@@ -3,7 +3,6 @@ import WerkItem from './WerkItem'
 import { iWerk } from '../../interfaces/IWerk'
 import { Link } from 'lucide-react'
 
-import keyboard from '../../assets/img/appleKeyboard.jpg'
 
 export default () => {
   const [werk, setWerk] = useState<iWerk[]>([

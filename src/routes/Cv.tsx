@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import AppNavigation from '../components/AppNavigation'
 import AppComputervaardigheden from '../components/CV/AppComputervaardigheden'
 import AppOpleiding from '../components/CV/AppOpleiding'
@@ -8,6 +8,17 @@ import AppWerkervaring from '../components/CV/AppWerkervaring'
 export default function Cv() {
   const [active, setActive] = useState(0)
 
+  // TODO: set timer to change active every 5 seconds
+  useEffect(() => {
+  const timer = setTimeout(() => {
+    if (active === 3) {
+      setActive(0)
+    } else {
+      setActive(active + 1)
+    }
+  }, 3000)
+  return () => clearTimeout(timer)
+  }, [active])
   
   return (
     <main className="flex h-screen w-full flex-col items-center bg-black p-4">
