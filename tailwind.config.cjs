@@ -24,6 +24,9 @@ module.exports = {
       colors: {
         accent: '#d4af37',
       },
+      gridTemplateRows: {
+        'layout': 'repeat(2, minmax(0, 0.4fr))',
+      },
     },
   },
   plugins: [],
