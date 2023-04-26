@@ -55,23 +55,23 @@ export default () => {
     //   </div>
     // </div>
     <div className="grid grid-cols-2 h-full w-full ">
-      <div className="row-start-1 col-start-1 flex flex-row items-center self-start">
-        <img  src={arrowRight} alt="" className='w-1/4'/>
+      <div className="row-start-1 col-start-1 flex flex-row items-center self-start ">
+        <img  src={arrowRight} alt="" className='w-1/4 tablet:w-[15%]'/>
         <p className='text-white font-special ml-4 text-2xl tracking-widest  self-end'>Mijn naam</p>
       </div>
-      <div onMouseEnter={() => handleHover(1)} onMouseLeave={() => handleHover(0)} className='row-start-6 col-span-2 z-10 h-fit relative text-center'>
+      <div onMouseEnter={() => handleHover(1)} onMouseLeave={() => handleHover(0)} className='row-start-6 col-span-2 z-10 h-fit relative text-center tablet:w-3/4 tablet:row-start-5 tablet:justify-self-center'>
           <img src={books} alt="" className={`w-full ${hover === 1 ? 'blur-xs' : 'blur-none'}`}/>
         <div className={`absolute top-1/2 w-full  ${hover === 1 ? 'opacity-100' : 'opacity-0'}`}>
           <p className='text-center font-special text-xl tracking-widest text-white'>Hobby: engelstalige boeken lezen</p>
         </div>
       </div>
-      <div onMouseEnter={() => handleHover(2)} onMouseLeave={() => handleHover(0)} className='row-start-4 col-start-1 w-4/5 rotate-[18deg] z-10 p-4'>
+      <div onMouseEnter={() => handleHover(2)} onMouseLeave={() => handleHover(0)} className='row-start-4 col-start-1 w-4/5 tablet:w-1/2 rotate-[18deg] z-10 p-4 tablet:row-start-2 tablet:col-start-2 tablet:justify-self-center tablet:p-0'>
         <img src={music} alt="" className={`${hover === 2 ? 'blur-xs brightness-50' : 'blur-none'}`}/>
         <div className={`absolute top-1/3 w-full ${hover === 2 ? 'opacity-100' : 'opacity-0'}`}>
           <p className='text-center font-special text-xl tracking-widest text-white'>Hobby: muziek luisteren</p>
         </div>
       </div>
-      <div onMouseEnter={() => handleHover(3)} onMouseLeave={() => handleHover(0)} className='row-start-2 col-start-1 w-4/5 rotate-[-18deg] z-10 p-4'>
+      <div onMouseEnter={() => handleHover(3)} onMouseLeave={() => handleHover(0)} className='row-start-2 col-start-1 w-4/5 tablet:w-3/5 rotate-[-18deg] z-10 p-4' >
           <img src={photograpy} alt="" className={`${hover === 3 ? 'blur-xs brightness-50' : 'blur-none'} `}/>
         <div className={`absolute top-1/3 w-full ${hover === 3 ? 'opacity-100' : 'opacity-0'}`}>
           <p className='text-center font-special text-xl tracking-widest text-white'>Hobby: foto's maken</p>
@@ -82,11 +82,11 @@ export default () => {
         <img src={arrowDown} alt="" className='w-[2%]'/>
         <img src={myPhoto} alt="" className='w-[30%]'/>
       </div>
-      <div className='row-start-3 col-span-2 flex flex-row justify-end'>
+      <div className='row-start-3 col-span-2 flex flex-row justify-end '>
         <Smile className='stroke-white m-3'/>
-        <p className='text-white font-special text-xl tracking-widest w-1/2 p-2 text-justify'>zeer gedreven, goed luisterend oor, een doorzetter, zorgzaam, denkt out-of-the-box</p>
+        <p className='text-white font-special text-xl tracking-widest w-1/2  p-2 text-justify'>zeer gedreven, goed luisterend oor, een doorzetter, zorgzaam, denkt out-of-the-box</p>
       </div>
-      <div className='row-start-5 col-span-2 flex flex-row items-center justify-center py-2'>
+      <div className='row-start-5 col-span-2 flex flex-row items-center justify-center py-2 tablet:p-0 tablet:col-span-1 tablet:row-start-4'>
         <Frown className='stroke-white m-3'/>
         <p className='text-white font-special text-xl tracking-widest w-3/4'>vlug afgeleid, introvert, overthinker</p>
       </div>

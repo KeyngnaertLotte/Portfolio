@@ -31,7 +31,7 @@ export default function AboutMe() {
       <AppNavigation />
     </div>
       <div className="h-screen w-full flex flex-col items-center p-4 pb-0">
-      <div className="flex flex-row">
+      <div className="flex flex-row justify-between w-full">
         <h1 className='text-white font-heading font-bold text-4xl'>Lotte Keyngnaert</h1>
         {isMobile ? <button className='self-start' onClick={showNavigation}><Menu className='stroke-white' size={60}/></button> : <AppNavigation /> }
       </div>
