@@ -20,6 +20,10 @@ module.exports = {
         'sans-serif'
       ],
     },
+    screens: {
+      'web': '840px',
+      'tablet': '560px',
+    },
     extend: {
       colors: {
         accent: '#d4af37',
