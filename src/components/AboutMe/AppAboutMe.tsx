@@ -84,7 +84,7 @@ export default () => {
       </div>
       <div className='row-start-3 col-span-2 flex flex-row justify-end web:absolute web:bottom-[13%] web:left-[3%] web:justify-start'>
         <Smile className='stroke-white m-3'/>
-        <p className='text-white font-special text-xl tracking-widest w-1/2 web:w-1/3 web:p-0 p-2 text-justify web:text-left'>zeer gedreven, goed luisterend oor, een doorzetter, zorgzaam, denkt out-of-the-box</p>
+        <p className='text-white font-special text-xl tracking-widest w-1/2 web:w-2/5 web:p-0 p-2 text-justify web:text-left'>zeer gedreven, goed luisterend oor, een doorzetter, zorgzaam, denkt out-of-the-box</p>
       </div>
       <div className='row-start-5 col-span-2 flex flex-row items-center justify-center py-2 tablet:p-0 tablet:col-span-1 tablet:row-start-4 web:absolute web:inset-y-0 web:right-[3%]'>
         <Frown className='stroke-white m-3'/>
