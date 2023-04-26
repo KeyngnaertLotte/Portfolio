@@ -16,8 +16,8 @@ module.exports = {
         'Helvetica',
       ],
       special: [
-        'Highest Praise',
-        'gravesend-sans',
+        "highest-praise", 
+        'sans-serif'
       ],
     },
     extend: {

@@ -5,7 +5,6 @@ import music from '../../assets/img/music.png'
 import photograpy from '../../assets/img/photography.png'
 import arrowDown from '../../assets/svg/arrowThisIsMe.svg'
 import myPhoto from '../../assets/img/Foto_LotteKeyngnaert.png'
-import Tooltip from '@mui/material/Tooltip';
 import { useState } from 'react'
 
 
@@ -50,7 +49,7 @@ export default () => {
         <Smile className='stroke-white m-3'/>
         <p className='text-white font-special text-xl tracking-widest w-1/3'>zeer gedreven, goed luisterend oor, een doorzetter, zorgzaam, denkt out-of-the-box</p>
       </div>
-      <div className='absolute inset-y-0 right-[6%] flex flex-row items-center'>
+      <div className='absolute inset-y-0 right-[3%] flex flex-row items-center'>
         <Frown className='stroke-white m-3'/>
         <p className='text-white font-special text-xl tracking-widest w-3/4'>vlug afgeleid, introvert, overthinker</p>
       </div>
