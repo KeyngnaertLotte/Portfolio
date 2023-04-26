@@ -17,7 +17,7 @@ export default function AboutMe() {
     }
   }
   return (
-    // <main className="h-screen bg-black w-full flex flex-col items-center p-4">
+    // <main className="h-screen  w-full flex flex-col items-center p-4">
     //   <div className="flex flex-row justify-around w-9/12">
     //     <h1 className='text-white text-4xl pb-5 font-heading font-bold w-11/12'>Lotte Keyngnaert</h1>
     //     <AppNavigation/>
@@ -30,8 +30,8 @@ export default function AboutMe() {
       <button className='self-end' onClick={showNavigation}><X className='stroke-white' size={60}/></button>
       <AppNavigation />
     </div>
-      <div className="h-screen w-full flex flex-col items-center p-4 pb-0">
-      <div className="flex flex-row justify-between w-full">
+      <div className="h-screen w-full flex flex-col items-center p-4 pb-0 ">
+      <div className="flex flex-row justify-between w-full  web:w-9/12 ">
         <h1 className='text-white font-heading font-bold text-4xl'>Lotte Keyngnaert</h1>
         {isMobile ? <button className='self-start' onClick={showNavigation}><Menu className='stroke-white' size={60}/></button> : <AppNavigation /> }
       </div>
