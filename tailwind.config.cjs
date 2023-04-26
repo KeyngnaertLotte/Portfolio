@@ -21,7 +21,8 @@ module.exports = {
       ],
     },
     screens: {
-      'tablet': '820px',
+      'web': '840px',
+      'tablet': '720px',
     },
     extend: {
       colors: {
