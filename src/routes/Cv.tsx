@@ -8,7 +8,7 @@ import { Menu, X } from 'lucide-react'
 
 
 export default function Cv() {
-  const [active, setActive] = useState(0)
+  const [active, setActive] = useState(1)
 
   // TODO: set timer to change active every 5 seconds
   // useEffect(() => {
