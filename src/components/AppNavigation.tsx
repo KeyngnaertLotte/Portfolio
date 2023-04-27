@@ -7,7 +7,6 @@ export default () => {
   const isMobile = useMediaQuery({ query: '(max-width: 915px)' })
 
   const onPage = (id: string) => {
-    console.log(id)
     if (currentPage === id) {
       return 'm-3 pb-1 border-b-2 border-accent text-2xl web:text-lg w-fit'
     } else {

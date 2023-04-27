@@ -8,19 +8,20 @@ import { Menu, X } from 'lucide-react'
 
 
 export default function Cv() {
-  const [active, setActive] = useState(2)
+  const [active, setActive] = useState(0)
 
   // TODO: set timer to change active every 5 seconds
-  // useEffect(() => {
-  // const timer = setTimeout(() => {
-  //   if (active === 3) {
-  //     setActive(0)
-  //   } else {
-  //     setActive(active + 1)
-  //   }
-  // }, 3000)
-  // return () => clearTimeout(timer)
-  // }, [active])
+  useEffect(() => {
+    console.log(active)
+  const timer = setTimeout(() => {
+    if (active === 2) {
+      setActive(0)
+    } else {
+      setActive(active + 1)
+    }
+  }, 3000)
+  return () => clearTimeout(timer)
+  }, [active])
 
   const isMobile = useMediaQuery({ query: '(max-width: 840px)' })
   const [showNav, setShowNav] = useState(false)

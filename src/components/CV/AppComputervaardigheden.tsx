@@ -3,7 +3,7 @@ import { Languages, Code2, Paintbrush, LayoutGrid, Layout } from 'lucide-react'
 export default () => {
   return (
     
-    <div className="flex h-full flex-col items-center text-white mt-10 tablet:h-4/5  web:w-11/12 ">
+    <div className="flex h-full flex-col items-center text-white mt-10 tablet:h-4/5  web:w-11/12 web:h-full">
       <h2 className=" text-center font-heading text-[1.7rem] font-medium leading-8 tablet:text-4xl web:m-8 ">
         Computervaardigheden & Taalkennis
       </h2>
