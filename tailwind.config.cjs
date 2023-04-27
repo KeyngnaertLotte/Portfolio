@@ -30,6 +30,7 @@ module.exports = {
       },
       gridTemplateRows: {
         'layout': 'repeat(2, minmax(0, 0.4fr))',
+        'tablet': '100px minmax(0, 0.3fr) minmax(0, 0.3fr)',
       },
       blur: {
         'xs' : '2px',
