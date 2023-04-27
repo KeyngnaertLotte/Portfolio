@@ -62,12 +62,12 @@ export default () => {
     //   </div>
     // </div>
     
-    <div className="flex h-full flex-col items-center text-white mt-10">
-      <h2 className=" text-center font-heading text-[1.7rem] font-medium leading-8">
+    <div className="flex h-full flex-col items-center text-white mt-10 tablet:h-4/5 ">
+      <h2 className=" text-center font-heading text-[1.7rem] font-medium leading-8 tablet:text-4xl">
         Computervaardigheden & Taalkennis
       </h2>
-      <div className="flex h-full w-full flex-col justify-center items-center">
-        <div className="h-fit w-full p-2 border-b-2 border-accent">
+      <div className="flex h-full w-full flex-col justify-center items-center tablet:flex-wrap tablet:flex-row tablet:h-fit tablet:mt-24">
+        <div className="h-fit w-full p-2 border-b-2 border-accent tablet:w-2/5 tablet:h-44 tablet:p-5 tablet:m-5 tablet:shadow tablet:shadow-accent tablet:border-0">
           <h3 className="col-span-2 mb-1 flex flex-row items-center gap-2 font-heading text-2xl font-medium">
             <Languages className="stroke-white" />
             Taalkennis
@@ -89,7 +89,7 @@ export default () => {
             </p>
           </div>
         </div>
-        <div className="h-fit w-full p-4 border-b-2 border-accent">
+        <div className="h-fit w-full p-4 border-b-2 border-accent tablet:w-2/5 tablet:h-44 tablet:p-5 tablet:m-5 tablet:shadow tablet:shadow-accent tablet:border-0">
           <h3 className="mb-2 flex  flex-row items-center gap-4 font-heading text-2xl font-medium">
             <Code2 className="stroke-white" />
             Codeertalen
@@ -99,7 +99,7 @@ export default () => {
             beetje C++
           </p>
         </div>
-        <div className="h-fit w-full p-4 border-b-2 border-accent">
+        <div className="h-fit w-full p-4 border-b-2 border-accent tablet:w-2/5 tablet:h-44 tablet:p-5 tablet:m-5 tablet:shadow tablet:shadow-accent tablet:border-0">
           <h3 className="mb-2 flex  flex-row items-center gap-4 font-heading text-2xl font-medium">
             <Paintbrush className="stroke-white" />
             Adobe Apps
@@ -108,7 +108,7 @@ export default () => {
             Photoshop, Illustrator, Indesign, After Effects, Xd, Premiere Pro
           </p>
         </div>
-        <div className="h-fit w-full p-4 border-b-2 border-accent">
+        <div className="h-fit w-full p-4 border-b-2 border-accent tablet:w-2/5 tablet:h-44 tablet:p-5 tablet:m-5 tablet:shadow tablet:shadow-accent tablet:border-0">
           <h3 className="mb-2 flex  flex-row items-center gap-4 font-heading text-2xl font-medium">
             <LayoutGrid className="stroke-white" />
             Andere Apps

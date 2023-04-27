@@ -62,7 +62,7 @@ export default function Cv() {
         {isMobile ? <button className='self-start' onClick={showNavigation}><Menu className='stroke-white' size={60}/></button> : <AppNavigation /> }
       </div>
       {active === 0 ? <AppOpleiding/> : active === 1 ? <AppWerkervaring/> : <AppComputervaardigheden/>}
-      <div className='flex flex-row gap-4 mb-8'>
+      <div className='flex flex-row gap-4 mb-8 '>
        <button className={`w-24 h-1 bg-white rounded ${active === 0 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(0)}/>
        <button className={`w-24 h-1 bg-white rounded ${active === 1 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(1)}/>
        <button className={`w-24 h-1 bg-white rounded ${active === 2 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(2)}/>

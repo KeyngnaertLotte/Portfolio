@@ -3,8 +3,8 @@ import athenaHeule from '../../assets/img/AthenaCampusHeule.jpg'
 
 export default () => {
   return (
-    <div className="text-white grid grid-cols-1 h-full mt-10 tablet:grid-cols-2 tablet:grid-rows-tablet tablet:h-4/5 items-center web:h-full web:w-11/12 web:gap-8 web:grid-rows-web">
-      <h2 className="font-heading text-3xl font-medium justify-self-center tablet:col-span-2">Opleiding</h2>
+    <div className="text-white grid grid-cols-1 h-full mt-10 tablet:grid-cols-2 tablet:grid-rows-tablet tablet:h-4/5  items-center web:h-full web:w-11/12 web:gap-8 web:grid-rows-web">
+      <h2 className="font-heading text-3xl font-medium justify-self-center tablet:col-span-2 tablet:text-4xl">Opleiding</h2>
         <div className='row-start-2 text-right my-3 tablet:my-1'>
             <h3 className="font-heading text-2xl font-medium">Multimedia Visueel</h3>
             <p className="font-light font-body mb-4">Afgestudeerd in 2020</p>

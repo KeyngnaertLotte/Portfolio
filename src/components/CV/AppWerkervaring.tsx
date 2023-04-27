@@ -50,7 +50,7 @@ export default () => {
   }
 
   return (
-    <div className="grid grid-cols-1 grid-rows-mobile text-white h-full tablet:h-4/5 web:grid-cols-[minmax(auto,_1fr)_20px_minmax(auto,_1fr)] web:h-full web:mb-8 web:gap-x-8">
+    <div className="grid grid-cols-1 grid-rows-mobile text-white h-full tablet:h-[84%] web:grid-cols-[minmax(auto,_1fr)_20px_minmax(auto,_1fr)] web:h-full web:mb-8 web:gap-x-8">
       <h2 className="mb-8 justify-self-center self-end font-heading text-3xl font-medium tablet:text-4xl web:col-span-3 web:row-start-1">
         Werkervaring
       </h2>
