@@ -16,7 +16,7 @@ export default () => {
   }
 
   return (
-    <div className="font-body text-white flex flex-col web:flex-row web:justify-between h-full web:h-fit mt-10 gap-5 web:items-center web:gap-0  web:mt-0 web:w-3/6">
+    <div className="font-body text-white flex flex-col web:flex-row web:justify-end h-full web:h-fit mt-10 gap-5 web:items-center web:gap-0  web:mt-0 web:w-3/6">
       <Link to={'/'} className={onPage('')}>
         Home
       </Link>

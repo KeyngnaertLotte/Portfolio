@@ -2,7 +2,7 @@ import AppNavigation from '../components/AppNavigation'
 import bg from '../assets/img/BgHome.jpg'
 import { useMediaQuery } from 'react-responsive'
 import { Menu, X } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 export default function Home() {
   const isMobile = useMediaQuery({ query: '(max-width: 840px)' })
