@@ -125,23 +125,23 @@ export default function Portfolio() {
         <h1 className='text-white font-heading font-bold text-4xl'>Lotte Keyngnaert</h1>
         {isMobile ? <button className='self-start' onClick={showNavigation}><Menu className='stroke-white' size={60}/></button> : <AppNavigation /> }
       </div>
-      <div className="flex h-full w-full flex-col items-center mt-8">
-        <div className="grid grid-cols-3 h-1/2 w-full pt-3 items-center">
+      <div className="flex h-full w-full flex-col items-center mt-8 ">
+        <div className="grid grid-cols-3 h-1/2 w-full pt-3 items-center tablet:h-fit tablet:pb-5">
           <div className="col-start-1 col-span-1 flex flex-col gap-6 items-end ">
-            <img src={firstProject} alt="ledjes en knopjes in een snoepdoos" className={`rounded-2xl w-[80%] ${active === 1 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`} onClick={() => print(1)}/>
-            <img src={doubleExposure} onClick={() => print(2)} alt="zelfportret met speciale achtergrond en met een speciale foto als omtrek van mijn gezicht" className={`rounded-2xl w-[80%] ${active === 2 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+            <img src={firstProject} alt="ledjes en knopjes in een snoepdoos" className={`rounded-2xl w-[80%] tablet:w-[60%] ${active === 1 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`} onClick={() => print(1)}/>
+            <img src={doubleExposure} onClick={() => print(2)} alt="zelfportret met speciale achtergrond en met een speciale foto als omtrek van mijn gezicht" className={`rounded-2xl w-[80%] tablet:w-[60%] ${active === 2 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
           </div>
-          <div className='col-start-2 col-span-2 flex flex-col gap-6 items-center '>
-            <div className='flex flex-row gap-6 w-[40%] items-center justify-center'>
+          <div className='col-start-2 col-span-2 flex flex-col gap-6  items-center tablet:w-fit'>
+            <div className='flex flex-row gap-6 w-[40%] tablet:w-[30%] items-center justify-center'>
               <img src={productShowcase} alt="een 3d afbeelding van een metalen doosje" onClick={() => print(3)} className={`rounded-2xl ${active === 3 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
               <img src={projectOne} alt="een bed met een groene ledstrip" onClick={() => print(4)} className={`rounded-2xl ${active === 4 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
             </div>
-            <div className='w-[85%]'>
+            <div className='w-[85%] tablet:w-[65%]'>
               <img src={hybridIceBowl} alt="een dier met het hoofd van een ijsbeer en het lichaam van een uil in de sneeuw" onClick={() => print(5)} className={`rounded-2xl ${active === 5 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
             </div>
           </div>
         </div>
-        <div className="h-1/2 w-full  border-t-2 border-accent p-6 text-white flex flex-col">
+        <div className="h-1/2 w-full  border-t-2 border-accent p-6 text-white flex flex-col tablet:h-2/3 ">
           <h3 className="font-heading text-2xl font-medium">
             {info[active].title}
           </h3>
