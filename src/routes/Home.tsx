@@ -17,16 +17,9 @@ export default function Home() {
     }
   }
   return (
-    // <main className=" h-screen flex flex-col-reverse web:flex-row">
-    //   <div className='web:h-full  h-1/2 web:w-1/2 w-full'> <img src={bg} alt="" className='web:h-full h-3/5 absolute bottom-0 left-0'/></div>
-    //   <div className="h-1/2 web:h-full web:w-1/2 w-full flex flex-row web:flex-col web:justify-center web:items-center">
-    //     <h1 className='text-white text-6xl pb-5 font-heading font-bold '>Lotte Keyngnaert</h1>
-    //     <AppNavigation />
-    //   </div>
-    // </main>
     
     <main className="h-screen w-screen flex flex-col-reverse web:flex-row">
-      <div className='h-2/3 w-full web:h-full web:w-1/2'> <img src={bg} alt="" className='h-full'/></div>
+      <div className='h-2/3 w-full web:h-full web:w-1/2'> <img src={bg} alt="De helft een zelfportret in zwart wit" className='h-full'/></div>
       <div className="h-1/3 w-full flex flex-row justify-between web:justify-center web:items-center p-4 web:h-full web:w-1/2 web:flex-col">
         <h1 className='text-white font-heading font-bold text-5xl web:text-6xl self-center tablet:text-7xl'>Lotte Keyngnaert</h1>
         {isMobile ? <button className='self-start' onClick={showNavigation}><Menu className='stroke-white' size={60}/></button> : <AppNavigation /> }

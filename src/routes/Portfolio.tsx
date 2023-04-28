@@ -75,16 +75,16 @@ export default function Portfolio() {
       <div className="flex h-full w-full flex-row items-center">
         <div className="grid grid-cols-3  w-3/5 pr-6">
           <div className="col-start-1 col-span-1 flex flex-col gap-6 items-end ">
-            <img src={firstProject} alt="" className={`rounded-2xl w-[80%] ${active === 1 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`} onClick={() => print(1)}/>
-            <img src={doubleExposure} onClick={() => print(2)} alt="" className={`rounded-2xl w-[80%] ${active === 2 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+            <img src={firstProject} alt="ledjes en knopjes in een snoepdoos" className={`rounded-2xl w-[80%] ${active === 1 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`} onClick={() => print(1)}/>
+            <img src={doubleExposure} onClick={() => print(2)} alt="zelfportret met speciale achtergrond en met een speciale foto als omtrek van mijn gezicht" className={`rounded-2xl w-[80%] ${active === 2 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
           </div>
           <div className='col-start-2 col-span-2 flex flex-col gap-6 items-center '>
             <div className='flex flex-row gap-6 w-[40%] items-center justify-center'>
-              <img src={productShowcase} alt="" onClick={() => print(3)} className={`rounded-2xl ${active === 3 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
-              <img src={projectOne} alt="" onClick={() => print(4)} className={`rounded-2xl ${active === 4 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+              <img src={productShowcase} alt="een 3d afbeelding van een metalen doosje" onClick={() => print(3)} className={`rounded-2xl ${active === 3 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+              <img src={projectOne} alt="een bed met een groene ledstrip" onClick={() => print(4)} className={`rounded-2xl ${active === 4 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
             </div>
             <div className='w-[85%]'>
-              <img src={hybridIceBowl} alt="" onClick={() => print(5)} className={`rounded-2xl ${active === 5 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+              <img src={hybridIceBowl} alt="een dier met het hoofd van een ijsbeer en het lichaam van een uil in de sneeuw" onClick={() => print(5)} className={`rounded-2xl ${active === 5 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
             </div>
           </div>
         </div>
