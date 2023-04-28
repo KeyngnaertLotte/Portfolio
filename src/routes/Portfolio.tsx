@@ -31,7 +31,7 @@ export default function Portfolio() {
       description: <p className='font-body'>Dit was een opdracht van het 6de middelbaar.<br/><br/>
       De bedoeling van deze opdracht was om van een portretfoto het gezicht onherkenbaar te maken terwijl het silhouette wel duidelijk herkenbaar bleef.
       <br/><br/>
-      Ik vond het een leuk idee om buiten het silhouette een iets rustigere/koudere omgeving te creeeren en in het silhoutte een drukkere/warme omgeving met een vulkaan. Hierdoor</p> ,
+      Ik vond het een leuk idee om buiten het silhouette een iets rustigere/koudere omgeving te creeeren en in het silhoutte een drukkere/warme omgeving met een vulkaan.</p> ,
     },
     {
       title: 'Productshowcase',
@@ -52,7 +52,7 @@ export default function Portfolio() {
       subtitle: 'Gebruik gemaakt van Adobe Photoshop',
       description: <p className='font-body'>De bedoeling was om een realistische hybride te ontwerpen door gebruik te maken van meerdere afbeeldingen van
       dieren. <br/><br/>De Ice Bowl is een mix van een ijsbeer en een uil. En de foto hieronder is een mix van een konijn en een tijger.</p> ,
-      extra: <img src={hybridTinny} alt="" className='w-3/5 rounded-md mx-auto'/>
+      extra: <img src={hybridTinny} alt="" className='w-2/3 rounded-md mx-auto'/>
     }
   ]
   const print = (project : number) => {
@@ -116,7 +116,7 @@ export default function Portfolio() {
     //     </div>
     //   </div>
     // </main>
-    <main className="flex h-screen w-full flex-col items-center bg-black p-4">
+    <main className="flex h-screen w-full flex-col items-center p-4">
       <div className={`bg-black z-20 overflow-hidden flex flex-col ${showNav ? 'translate-x-0 absolute top-0 left-0 h-screen w-screen  p-4' : 'translate-x-full none h-0 w-0  p-0'}`}>
       <button className='self-end' onClick={showNavigation}><X className='stroke-white' size={60}/></button>
       <AppNavigation />
@@ -125,33 +125,35 @@ export default function Portfolio() {
         <h1 className='text-white font-heading font-bold text-4xl'>Lotte Keyngnaert</h1>
         {isMobile ? <button className='self-start' onClick={showNavigation}><Menu className='stroke-white' size={60}/></button> : <AppNavigation /> }
       </div>
-      <div className="flex h-full w-full flex-col items-center mt-8 ">
-        <div className="grid grid-cols-3 h-1/2 w-full pt-3 items-center tablet:h-fit tablet:pb-5">
+
+
+      <div className="flex h-full w-full flex-col items-center text-white mt-8">
+        <div className="grid grid-cols-3 w-full h-1/2 gap-6 items-center">
           <div className="col-start-1 col-span-1 flex flex-col gap-6 items-end ">
-            <img src={firstProject} alt="ledjes en knopjes in een snoepdoos" className={`rounded-2xl w-[80%] tablet:w-[60%] ${active === 1 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`} onClick={() => print(1)}/>
-            <img src={doubleExposure} onClick={() => print(2)} alt="zelfportret met speciale achtergrond en met een speciale foto als omtrek van mijn gezicht" className={`rounded-2xl w-[80%] tablet:w-[60%] ${active === 2 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+            <img src={firstProject} alt="ledjes en knopjes in een snoepdoos" className={`rounded-2xl w-[90%] ${active === 1 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`} onClick={() => print(1)}/>
+            <img src={doubleExposure} onClick={() => print(2)} alt="zelfportret met speciale achtergrond en met een speciale foto als omtrek van mijn gezicht" className={`rounded-2xl w-[90%] ${active === 2 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
           </div>
-          <div className='col-start-2 col-span-2 flex flex-col gap-6  items-center tablet:w-fit'>
-            <div className='flex flex-row gap-6 w-[40%] tablet:w-[30%] items-center justify-center'>
+          <div className='col-start-2 col-span-2 flex flex-col gap-6 items-center '>
+            <div className='flex flex-row gap-6 items-center justify-center w-[40%]'>
               <img src={productShowcase} alt="een 3d afbeelding van een metalen doosje" onClick={() => print(3)} className={`rounded-2xl ${active === 3 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
               <img src={projectOne} alt="een bed met een groene ledstrip" onClick={() => print(4)} className={`rounded-2xl ${active === 4 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
             </div>
-            <div className='w-[85%] tablet:w-[65%]'>
+            <div className='w-[85%] flex justify-center'>
               <img src={hybridIceBowl} alt="een dier met het hoofd van een ijsbeer en het lichaam van een uil in de sneeuw" onClick={() => print(5)} className={`rounded-2xl ${active === 5 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
             </div>
           </div>
         </div>
-        <div className="h-1/2 w-full  border-t-2 border-accent p-6 text-white flex flex-col tablet:h-2/3 ">
+        <div className="w-full h-1/2 border-t-2 border-accent pt-6">
           <h3 className="font-heading text-2xl font-medium">
             {info[active].title}
           </h3>
           <p className="mb-4 font-body font-light">
             {info[active].subtitle}
           </p>
-          <div className='mb-6'>
+          <div className=''>
             {info[active].description ? info[active].description : ''}
           </div>
-          <div className={`h-full w-full flex pb-4  ${active === 0 ? 'items-start' : 'items-end'}`}>
+          <div className={`h-fit w-full flex py-4 `}>
             {info[active].extra ? info[active].extra : ''}
           </div>
         </div>
