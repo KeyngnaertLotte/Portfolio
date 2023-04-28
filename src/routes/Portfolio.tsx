@@ -6,8 +6,9 @@ import productShowcase from '../../src/assets/img/ProductShowcase_Moment.jpg'
 import hybridIceBowl from '../../src/assets/img/IceBowl.jpg'
 import hybridTinny from '../../src/assets/img/Tinny.jpg'
 import productShowcaseVideo from '../../src/assets/video/ProductShowcase.mp4'
-import { Link } from 'lucide-react'
+import { Link, Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
+import { useMediaQuery } from 'react-responsive'
 
 export default function Portfolio() {
   const [active, setActive] = useState(0)
@@ -63,17 +64,69 @@ export default function Portfolio() {
       setActive(project)
     }
   }
+  const isMobile = useMediaQuery({ query: '(max-width: 840px)' })
+  const [showNav, setShowNav] = useState(false)
+
+  const showNavigation = () => {
+    if (showNav){
+      setShowNav(false)
+    }
+    else{
+      setShowNav(true)
+    }
+  }
 
   return (
+    // <main className="flex h-screen w-full flex-col items-center bg-black p-4">
+    //   <div className="flex w-9/12 flex-row justify-around">
+    //     <h1 className="w-11/12 pb-5 font-heading text-4xl font-bold text-white">
+    //       Lotte Keyngnaert
+    //     </h1>
+    //     <AppNavigation />
+    //   </div>
+    //   <div className="flex h-full w-full flex-row items-center">
+    //     <div className="grid grid-cols-3  w-3/5 pr-6">
+    //       <div className="col-start-1 col-span-1 flex flex-col gap-6 items-end ">
+    //         <img src={firstProject} alt="ledjes en knopjes in een snoepdoos" className={`rounded-2xl w-[80%] ${active === 1 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`} onClick={() => print(1)}/>
+    //         <img src={doubleExposure} onClick={() => print(2)} alt="zelfportret met speciale achtergrond en met een speciale foto als omtrek van mijn gezicht" className={`rounded-2xl w-[80%] ${active === 2 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+    //       </div>
+    //       <div className='col-start-2 col-span-2 flex flex-col gap-6 items-center '>
+    //         <div className='flex flex-row gap-6 w-[40%] items-center justify-center'>
+    //           <img src={productShowcase} alt="een 3d afbeelding van een metalen doosje" onClick={() => print(3)} className={`rounded-2xl ${active === 3 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+    //           <img src={projectOne} alt="een bed met een groene ledstrip" onClick={() => print(4)} className={`rounded-2xl ${active === 4 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+    //         </div>
+    //         <div className='w-[85%]'>
+    //           <img src={hybridIceBowl} alt="een dier met het hoofd van een ijsbeer en het lichaam van een uil in de sneeuw" onClick={() => print(5)} className={`rounded-2xl ${active === 5 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+    //         </div>
+    //       </div>
+    //     </div>
+    //     <div className="h-full w-2/5 border-l-2 border-accent p-6 text-white flex flex-col">
+    //       <h3 className="font-heading text-2xl font-medium">
+    //         {info[active].title}
+    //       </h3>
+    //       <p className="mb-4 font-body font-light">
+    //         {info[active].subtitle}
+    //       </p>
+    //       <div>
+    //         {info[active].description ? info[active].description : ''}
+    //       </div>
+    //       <div className='h-full w-full flex items-end'>
+    //         {info[active].extra ? info[active].extra : ''}
+    //       </div>
+    //     </div>
+    //   </div>
+    // </main>
     <main className="flex h-screen w-full flex-col items-center bg-black p-4">
-      <div className="flex w-9/12 flex-row justify-around">
-        <h1 className="w-11/12 pb-5 font-heading text-4xl font-bold text-white">
-          Lotte Keyngnaert
-        </h1>
-        <AppNavigation />
+      <div className={`bg-black z-20 overflow-hidden flex flex-col ${showNav ? 'translate-x-0 absolute top-0 left-0 h-screen w-screen  p-4' : 'translate-x-full none h-0 w-0  p-0'}`}>
+      <button className='self-end' onClick={showNavigation}><X className='stroke-white' size={60}/></button>
+      <AppNavigation />
+    </div>
+      <div className="flex flex-row justify-between w-full web:w-9/12 ">
+        <h1 className='text-white font-heading font-bold text-4xl'>Lotte Keyngnaert</h1>
+        {isMobile ? <button className='self-start' onClick={showNavigation}><Menu className='stroke-white' size={60}/></button> : <AppNavigation /> }
       </div>
-      <div className="flex h-full w-full flex-row items-center">
-        <div className="grid grid-cols-3  w-3/5 pr-6">
+      <div className="flex h-full w-full flex-col items-center mt-8">
+        <div className="grid grid-cols-3 h-1/2 w-full pt-3 items-center">
           <div className="col-start-1 col-span-1 flex flex-col gap-6 items-end ">
             <img src={firstProject} alt="ledjes en knopjes in een snoepdoos" className={`rounded-2xl w-[80%] ${active === 1 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`} onClick={() => print(1)}/>
             <img src={doubleExposure} onClick={() => print(2)} alt="zelfportret met speciale achtergrond en met een speciale foto als omtrek van mijn gezicht" className={`rounded-2xl w-[80%] ${active === 2 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
@@ -88,17 +141,17 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="h-full w-2/5 border-l-2 border-accent p-6 text-white flex flex-col">
+        <div className="h-1/2 w-full  border-t-2 border-accent p-6 text-white flex flex-col">
           <h3 className="font-heading text-2xl font-medium">
             {info[active].title}
           </h3>
           <p className="mb-4 font-body font-light">
             {info[active].subtitle}
           </p>
-          <div>
+          <div className='mb-6'>
             {info[active].description ? info[active].description : ''}
           </div>
-          <div className='h-full w-full flex items-end'>
+          <div className={`h-full w-full flex pb-4  ${active === 0 ? 'items-start' : 'items-end'}`}>
             {info[active].extra ? info[active].extra : ''}
           </div>
         </div>
