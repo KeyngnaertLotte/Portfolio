@@ -6,7 +6,7 @@ import productShowcase from '../../src/assets/img/ProductShowcase_Moment.jpg'
 import hybridIceBowl from '../../src/assets/img/IceBowl.jpg'
 import hybridTinny from '../../src/assets/img/Tinny.jpg'
 import productShowcaseVideo from '../../src/assets/video/ProductShowcase.mp4'
-import { Link, Menu, X } from 'lucide-react'
+import { Instagram, Link, Mail, Menu, MessageCircle, Phone, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
@@ -15,10 +15,12 @@ export default function Portfolio() {
   const info = [
     {
       title: 'Projects',
-      subtitle: 'Klik op een foto om meer te weten over elk project.',
-      link: 'https://www.instagram.com/__f_o_t_o_g_r_a_f_i_a__/',
-      linkText: 'Klik hier om meer van mijn zelfgemaakte foto\'s te zien.',
-      extra: <a href={'https://www.instagram.com/__f_o_t_o_g_r_a_f_i_a__/'} target="_blank" rel="noreferrer" className='flex flex-row gap-2 font-body italic'><Link className='stroke-white w-4'/> Klik hier om meer van mijn zelfgemaakte foto's te zien.</a>,
+      subtitle: 'Klik op een foto om meer te weten over elk project en klik op de geselecteerde foto om terug te keren.',
+      extra: <div className='flex flex-row gap-8 w-1/2 h-fit justify-end'>
+      <a href={'sms:+32468201739'} target="_blank" rel="noreferrer" className=''><MessageCircle className='stroke-white' size={32}/></a>
+      <a href={'mailto:lottekeyngnaert@hotmail.com'} target="_blank" rel="noreferrer" className=''><Mail className='stroke-white' size={32}/></a>
+      <a href={'https://www.instagram.com/__f_o_t_o_g_r_a_f_i_a__/'} target="_blank" rel="noreferrer" className=''><Instagram className='stroke-white' size={32}/></a>
+      </div>,
     },
     {
       title: 'Stop it - Spel',
@@ -153,7 +155,7 @@ export default function Portfolio() {
           <div className=''>
             {info[active].description ? info[active].description : ''}
           </div>
-          <div className={`h-full w-full flex py-4 web:h-fit  web:mt-auto`}>
+          <div className={`h-2/5 w-full flex py-4 items-end justify-end tablet:h-[65%] web:h-fit web:mt-auto`}>
             {info[active].extra ? info[active].extra : ''}
           </div>
         </div>
