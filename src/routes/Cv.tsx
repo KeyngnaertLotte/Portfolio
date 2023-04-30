@@ -5,7 +5,7 @@ import AppOpleiding from '../components/CV/AppOpleiding'
 import AppWerkervaring from '../components/CV/AppWerkervaring'
 import { useMediaQuery } from 'react-responsive'
 import { Download, Menu, X } from 'lucide-react'
-import cvLotte from '../assets/CV_LotteKeyngnaert.pdf'
+import cvLotte from '../assets/files/CV_LotteKeyngnaert.pdf'
 
 
 export default function Cv() {
