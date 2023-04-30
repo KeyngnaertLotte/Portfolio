@@ -43,6 +43,7 @@ export default function Cv() {
     <div className={`bg-black z-20 overflow-hidden flex flex-col ${showNav ? 'translate-x-0 absolute top-0 left-0 h-screen w-screen  p-4' : 'translate-x-full none h-0 w-0  p-0'}`}>
       <button className='self-end' onClick={showNavigation}><X className='stroke-white' size={60}/></button>
       <AppNavigation />
+      <a href={cvLotte} download={cvLotte} className='absolute bottom-[15%]  block tablet:hidden text-lg text-white'>Download cv</a>
     </div>
       <div className="h-screen w-full flex flex-col items-center p-4 pb-0 ">
       <div className="flex flex-row justify-between w-full  web:w-9/12 ">
