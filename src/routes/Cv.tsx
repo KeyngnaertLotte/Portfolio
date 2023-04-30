@@ -4,7 +4,8 @@ import AppComputervaardigheden from '../components/CV/AppComputervaardigheden'
 import AppOpleiding from '../components/CV/AppOpleiding'
 import AppWerkervaring from '../components/CV/AppWerkervaring'
 import { useMediaQuery } from 'react-responsive'
-import { Menu, X } from 'lucide-react'
+import { Download, Menu, X } from 'lucide-react'
+import cvLotte from '../assets/CV_LotteKeyngnaert.pdf'
 
 
 export default function Cv() {
@@ -49,10 +50,11 @@ export default function Cv() {
         {isMobile ? <button className='self-start' onClick={showNavigation}><Menu className='stroke-white' size={60}/></button> : <AppNavigation /> }
       </div>
       {active === 0 ? <AppOpleiding/> : active === 1 ? <AppWerkervaring/> : <AppComputervaardigheden/>}
-      <div className='flex flex-row gap-4 mb-8 '>
+      <div className='flex flex-row gap-4 mb-8  items-center'>
        <button className={`w-24 h-1 bg-white rounded ${active === 0 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(0)}/>
        <button className={`w-24 h-1 bg-white rounded ${active === 1 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(1)}/>
        <button className={`w-24 h-1 bg-white rounded ${active === 2 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(2)}/>
+        <a href={cvLotte} download={cvLotte} className='absolute right-[15%]'><Download className='stroke-white' size={24}/></a>
      </div>
       </div>
     </main>
