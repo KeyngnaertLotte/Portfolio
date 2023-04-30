@@ -54,7 +54,7 @@ export default function Cv() {
        <button className={`w-24 h-1 bg-white rounded ${active === 0 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(0)}/>
        <button className={`w-24 h-1 bg-white rounded ${active === 1 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(1)}/>
        <button className={`w-24 h-1 bg-white rounded ${active === 2 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(2)}/>
-        <a href={cvLotte} download={cvLotte} className='absolute right-[15%]'><Download className='stroke-white' size={24}/></a>
+        <a href={cvLotte} download={cvLotte} className='absolute right-[15%] text-white'>Download cv</a>
      </div>
       </div>
     </main>

@@ -152,7 +152,7 @@ export default () => {
         <p className="mb-4 font-body font-light">van 2017 - heden</p>
           </div>
           <div className={`flex-col items-start ${showInfo === 4 || isTablet ? 'flex' : 'hidden'}`}>
-          <p className="font-body">Leeftijden tussen 1 en 12jaar</p>
+          <p className="font-body">Leeftijden tussen 1 en 12 jaar</p>
         <p className="font-body italic">Bij diversen</p>
           </div>
         </div>
