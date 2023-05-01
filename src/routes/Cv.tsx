@@ -4,24 +4,26 @@ import AppComputervaardigheden from '../components/CV/AppComputervaardigheden'
 import AppOpleiding from '../components/CV/AppOpleiding'
 import AppWerkervaring from '../components/CV/AppWerkervaring'
 import { useMediaQuery } from 'react-responsive'
-import { Download, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import cvLotte from '../assets/files/CV_LotteKeyngnaert.pdf'
 
 
 export default function Cv() {
   const [active, setActive] = useState(0)
+  const [pauseTimer, setPauseTimer] = useState(false)
 
   // TODO: set timer to change active every 5 seconds
   useEffect(() => {
-    console.log(active)
-  const timer = setTimeout(() => {
-    if (active === 2) {
-      setActive(0)
-    } else {
-      setActive(active + 1)
+    if (!pauseTimer){
+      const timer = setTimeout(() => {
+        if (active === 2) {
+          setActive(0)
+        } else {
+          setActive(active + 1)
+        }
+      }, 3000)
+      return () => clearTimeout(timer)
     }
-  }, 3000)
-  return () => clearTimeout(timer)
   }, [active])
 
   const isMobile = useMediaQuery({ query: '(max-width: 840px)' })
@@ -52,9 +54,9 @@ export default function Cv() {
       </div>
       {active === 0 ? <AppOpleiding/> : active === 1 ? <AppWerkervaring/> : <AppComputervaardigheden/>}
       <div className='flex flex-row gap-4 mb-8  items-center'>
-       <button className={`w-24 h-1 bg-white rounded ${active === 0 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(0)}/>
-       <button className={`w-24 h-1 bg-white rounded ${active === 1 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(1)}/>
-       <button className={`w-24 h-1 bg-white rounded ${active === 2 ? `opacity-1` : 'opacity-50'}`} onClick={() => setActive(2)}/>
+       <button className={`w-24 h-1 bg-white rounded ${active === 0 ? `opacity-1` : 'opacity-50'}`} onClick={() => {setActive(0), setPauseTimer(true)}}/>
+       <button className={`w-24 h-1 bg-white rounded ${active === 1 ? `opacity-1` : 'opacity-50'}`} onClick={() => {setActive(1), setPauseTimer(true)}}/>
+       <button className={`w-24 h-1 bg-white rounded ${active === 2 ? `opacity-1` : 'opacity-50'}`} onClick={() => {setActive(2), setPauseTimer(true)}}/>
         <a href={cvLotte} download={cvLotte} className='absolute hidden tablet:block tablet:right-[10%] web:right-[15%] text-white'>Download cv</a>
      </div>
       </div>
