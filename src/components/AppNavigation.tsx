@@ -1,16 +1,13 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useMediaQuery } from 'react-responsive'
 
 export default () => {
   const currentPage = window.location.pathname.split('/')[1]
-  const isMobile = useMediaQuery({ query: '(max-width: 915px)' })
 
   const onPage = (id: string) => {
     if (currentPage === id) {
-      return 'm-3 pb-1 border-b-2 border-accent text-2xl web:text-lg w-fit'
+      return 'm-3 pb-1 border-b-2 border-accent text-2xl web:text-lg w-fit focus:ring-2 focus:ring-accent focus:rounded focus:outline-none'
     } else {
-      return 'm-3 pb-1 border-b-2 border-black hover:border-accent text-2xl web:text-lg text-white/50 hover:text-white w-fit'
+      return 'm-3 pb-1 border-b-2 border-black hover:border-accent text-2xl web:text-lg text-white/50 hover:text-white w-fit focus:ring-2 focus:ring-accent focus:rounded focus:outline-none'
     }
   }
 

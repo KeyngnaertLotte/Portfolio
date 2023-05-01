@@ -1,42 +1,9 @@
 import { useState } from 'react'
-import WerkItem from './WerkItem'
-import { iWerk } from '../../interfaces/IWerk'
 import { Link, Play } from 'lucide-react'
 import { useMediaQuery } from 'react-responsive'
 
 export default () => {
-  const [werk, setWerk] = useState<iWerk[]>([
-    {
-      name: 'Graphic Designer - Stage',
-      date: 'van 2020-03-02 tot 2020-03-21 (corona)',
-      place: 'Impressionant in Ieper',
-      website: 'https://www.impressionant.be/home/',
-      description: "Logo's ontwerpen, video's maken, enz.",
-      direction: 'right',
-    },
-    {
-      name: 'Administratief bediende - Vakantiejob',
-      date: 'Zomer van 2018-2020',
-      place: 'Vandelanotte Accountancy BVBA in Kortrijk',
-      website: 'https://www.vandelanotte.be/nl',
-      description:
-        'Het digitaliseren van documenten en invullen van opdracht brieven.',
-      direction: 'left',
-    },
-    {
-      name: 'Onderhoud - Vakantiejob',
-      date: 'Zomer 2019-2022',
-      place: 'Huize Zonnelied in Ieper',
-      website: 'https://www.huizezonnelied.be/',
-      description: 'Het kuisen van kamers, gangen, ramen, livings, enz.',
-      direction: 'right',
-    },
-    {
-      name: 'Andere - Occasioneel',
-      description: 'Oppassen bij diversen',
-      direction: 'left',
-    },
-  ])
+  
   const isTablet = useMediaQuery({ query: '(min-width:560px)' })
   const isDesktop = useMediaQuery({ query: '(min-width:840px)' })
   const [showInfo, setShowInfo] = useState(0)
@@ -76,7 +43,7 @@ export default () => {
               href={'https://www.impressionant.be/home/'}
               target="_blank"
               rel="noreferrer"
-              className="flex flex-row justify-end gap-2 font-body italic"
+              className="flex flex-row justify-end gap-2 font-body italic focus:ring-2 focus:ring-accent focus:rounded focus:outline-none"
             >
               <Link className="w-4 stroke-white" /> Impressionant in Ieper
             </a>
@@ -104,7 +71,7 @@ export default () => {
           href={'https://www.vandelanotte.be/nl'}
           target="_blank"
           rel="noreferrer"
-          className="flex flex-row justify-start gap-2 font-body italic"
+          className="flex flex-row justify-start gap-2 font-body italic focus:ring-2 focus:ring-accent focus:rounded focus:outline-none"
         >
           <Link className="w-4 stroke-white" /> Vandelanotte Accountancy BVBA in
           Kortrijk
@@ -133,7 +100,7 @@ export default () => {
           href={'https://www.huizezonnelied.be/'}
           target="_blank"
           rel="noreferrer"
-          className="flex flex-row justify-start gap-2 font-body italic"
+          className="flex flex-row justify-start gap-2 font-body italic focus:ring-2 focus:ring-accent focus:rounded focus:outline-none"
         >
           <Link className="w-4 stroke-white" /> Huize Zonnelied in Ieper
         </a>

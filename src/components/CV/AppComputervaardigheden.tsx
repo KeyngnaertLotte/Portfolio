@@ -1,4 +1,4 @@
-import { Languages, Code2, Paintbrush, LayoutGrid, Layout } from 'lucide-react'
+import { Languages, Code2, Paintbrush, LayoutGrid } from 'lucide-react'
 
 export default () => {
   return (
