@@ -115,7 +115,7 @@ export default function Portfolio() {
           <div className=''>
             {info[active].description ? info[active].description : ''}
           </div>
-          <div className={`h-2/5 w-full flex py-4 items-end justify-end tablet:h-[65%] web:h-fit web:mt-auto`}>
+          <div className={`h-fit w-full flex py-4 items-end justify-end  web:h-fit web:mt-auto`}>
             {info[active].extra ? info[active].extra : ''}
           </div>
         </div>
