@@ -54,10 +54,10 @@ export default function Cv() {
       </div>
       {active === 0 ? <AppOpleiding/> : active === 1 ? <AppWerkervaring/> : <AppComputervaardigheden/>}
       <div className='flex flex-row gap-4 mb-8  items-center'>
-       <button className={`w-24 h-1 bg-white rounded ${active === 0 ? `opacity-1` : 'opacity-50'}`} onClick={() => {setActive(0), setPauseTimer(true)}}/>
-       <button className={`w-24 h-1 bg-white rounded ${active === 1 ? `opacity-1` : 'opacity-50'}`} onClick={() => {setActive(1), setPauseTimer(true)}}/>
-       <button className={`w-24 h-1 bg-white rounded ${active === 2 ? `opacity-1` : 'opacity-50'}`} onClick={() => {setActive(2), setPauseTimer(true)}}/>
-        <a href={cvLotte} download={cvLotte} className='absolute hidden tablet:block tablet:right-[10%] web:right-[15%] text-white'>Download cv</a>
+       <button className={`w-24 h-1 bg-white rounded focus:ring focus:ring-accent focus:rounded focus:outline-none focus:opacity-100 ${active === 0 ? `opacity-1` : 'opacity-50'}`} onClick={() => {setActive(0), setPauseTimer(true)}}/>
+       <button className={`w-24 h-1 bg-white rounded focus:ring focus:ring-accent focus:rounded focus:outline-none focus:opacity-100 ${active === 1 ? `opacity-1` : 'opacity-50'}`} onClick={() => {setActive(1), setPauseTimer(true)}}/>
+       <button className={`w-24 h-1 bg-white rounded focus:ring focus:ring-accent focus:rounded focus:outline-none focus:opacity-100 ${active === 2 ? `opacity-1` : 'opacity-50'}`} onClick={() => {setActive(2), setPauseTimer(true)}}/>
+        <a href={cvLotte} download={cvLotte} className='absolute hidden tablet:block tablet:right-[10%] web:right-[15%] text-white focus:ring-2 focus:ring-accent focus:rounded focus:outline-none'>Download cv</a>
      </div>
       </div>
     </main>

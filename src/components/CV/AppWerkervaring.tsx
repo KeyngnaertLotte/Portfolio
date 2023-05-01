@@ -76,7 +76,7 @@ export default () => {
               href={'https://www.impressionant.be/home/'}
               target="_blank"
               rel="noreferrer"
-              className="flex flex-row justify-end gap-2 font-body italic"
+              className="flex flex-row justify-end gap-2 font-body italic focus:ring-2 focus:ring-accent focus:rounded focus:outline-none"
             >
               <Link className="w-4 stroke-white" /> Impressionant in Ieper
             </a>
@@ -104,7 +104,7 @@ export default () => {
           href={'https://www.vandelanotte.be/nl'}
           target="_blank"
           rel="noreferrer"
-          className="flex flex-row justify-start gap-2 font-body italic"
+          className="flex flex-row justify-start gap-2 font-body italic focus:ring-2 focus:ring-accent focus:rounded focus:outline-none"
         >
           <Link className="w-4 stroke-white" /> Vandelanotte Accountancy BVBA in
           Kortrijk
@@ -133,7 +133,7 @@ export default () => {
           href={'https://www.huizezonnelied.be/'}
           target="_blank"
           rel="noreferrer"
-          className="flex flex-row justify-start gap-2 font-body italic"
+          className="flex flex-row justify-start gap-2 font-body italic focus:ring-2 focus:ring-accent focus:rounded focus:outline-none"
         >
           <Link className="w-4 stroke-white" /> Huize Zonnelied in Ieper
         </a>

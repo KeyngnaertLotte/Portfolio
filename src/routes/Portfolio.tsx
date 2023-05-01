@@ -17,9 +17,9 @@ export default function Portfolio() {
       title: 'Projects',
       subtitle: 'Klik op een foto om meer te weten over elk project en klik op de geselecteerde foto om terug te keren.',
       extra: <div className='flex flex-row gap-8 w-1/2 h-fit justify-end'>
-      <a href={'sms:+32468201739'} target="_blank" rel="noreferrer" className=''><MessageCircle className='stroke-white' size={32}/></a>
-      <a href={'mailto:lottekeyngnaert@hotmail.com'} target="_blank" rel="noreferrer" className=''><Mail className='stroke-white' size={32}/></a>
-      <a href={'https://www.instagram.com/__f_o_t_o_g_r_a_f_i_a__/'} target="_blank" rel="noreferrer" className=''><Instagram className='stroke-white' size={32}/></a>
+      <a href={'sms:+32468201739'} target="_blank" rel="noreferrer" className='focus:ring-2 focus:ring-accent focus:rounded focus:outline-none'><MessageCircle className='stroke-white' size={32}/></a>
+      <a href={'mailto:lottekeyngnaert@hotmail.com'} target="_blank" rel="noreferrer" className='focus:ring-2 focus:ring-accent focus:rounded focus:outline-none'><Mail className='stroke-white' size={32}/></a>
+      <a href={'https://www.instagram.com/__f_o_t_o_g_r_a_f_i_a__/'} target="_blank" rel="noreferrer" className='focus:ring-2 focus:ring-accent focus:rounded focus:outline-none'><Instagram className='stroke-white' size={32}/></a>
       </div>,
     },
     {
@@ -132,16 +132,16 @@ export default function Portfolio() {
       <div className="flex h-full w-full flex-col items-center text-white mt-8 web:flex-row web:w-11/12 ">
         <div className="grid grid-cols-3 w-full h-1/2 gap-6 items-center web:w-3/5 web:h-full">
           <div className="col-start-1 col-span-1 flex flex-col gap-6 items-end ">
-            <img src={firstProject} alt="ledjes en knopjes in een snoepdoos" className={`rounded-2xl w-[90%] tablet:w-[70%] web:w-[80%] hover:border-[3px] hover:border-accent ${active === 1 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`} onClick={() => print(1)}/>
-            <img src={doubleExposure} onClick={() => print(2)} alt="zelfportret met speciale achtergrond en met een speciale foto als omtrek van mijn gezicht" className={`rounded-2xl w-[90%] tablet:w-[70%] web:w-[80%] hover:border-[3px] hover:border-accent ${active === 2 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+            <img src={firstProject} alt="ledjes en knopjes in een snoepdoos" tabIndex={0} onClick={() => print(1)} className={`rounded-2xl w-[90%] tablet:w-[70%] web:w-[80%] hover:border-[3px] hover:border-accent focus:ring-2 focus:ring-accent focus:rounded focus:outline-none ${active === 1 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+            <img src={doubleExposure} tabIndex={0} onClick={() => print(2)} alt="zelfportret met speciale achtergrond en met een speciale foto als omtrek van mijn gezicht" className={`rounded-2xl w-[90%] tablet:w-[70%] web:w-[80%] hover:border-[3px] hover:border-accent focus:ring-2 focus:ring-accent focus:rounded focus:outline-none ${active === 2 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
           </div>
           <div className='col-start-2 col-span-2 flex flex-col gap-6 items-center '>
             <div className='flex flex-row gap-6 items-center justify-center w-[40%] tablet:w-[33%] web:w-[37%]'>
-              <img src={productShowcase} alt="een 3d afbeelding van een metalen doosje" onClick={() => print(3)} className={`rounded-2xl hover:border-[3px] hover:border-accent ${active === 3 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
-              <img src={projectOne} alt="een bed met een groene ledstrip" onClick={() => print(4)} className={`rounded-2xl hover:border-[3px] hover:border-accent ${active === 4 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+              <img src={productShowcase} alt="een 3d afbeelding van een metalen doosje" tabIndex={0} onClick={() => print(3)} className={`rounded-2xl hover:border-[3px] hover:border-accent focus:ring-2 focus:ring-accent focus:rounded focus:outline-none ${active === 3 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+              <img src={projectOne} alt="een bed met een groene ledstrip" tabIndex={0} onClick={() => print(4)} className={`rounded-2xl focus:ring-2 focus:ring-accent focus:rounded focus:outline-none ${active === 4 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
             </div>
             <div className='w-[85%] tablet:w-[72%] flex justify-center web:w-[80%]'>
-              <img src={hybridIceBowl} alt="een dier met het hoofd van een ijsbeer en het lichaam van een uil in de sneeuw" onClick={() => print(5)} className={`rounded-2xl hover:border-[3px] hover:border-accent ${active === 5 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
+              <img src={hybridIceBowl} alt="een dier met het hoofd van een ijsbeer en het lichaam van een uil in de sneeuw" tabIndex={0} onClick={() => print(5)} className={`rounded-2xl focus:ring-2 focus:ring-accent focus:rounded focus:outline-none ${active === 5 ? 'border-accent border-[3px] opacity-100' :  active === 0 ? 'border-0 opacity-100' : 'border-0 opacity-50'}`}/>
             </div>
           </div>
         </div>
