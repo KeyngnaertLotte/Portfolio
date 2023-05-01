@@ -58,7 +58,6 @@ export default function Portfolio() {
     }
   ]
   const print = (project : number) => {
-    console.log('test')
     if (project === active){
       setActive(0)
     }
