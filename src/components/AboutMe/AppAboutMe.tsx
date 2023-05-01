@@ -13,7 +13,6 @@ export default () => {
 
   const handleHover = (id: number) => {
     setHover(id)
-    console.log(hover)
   }
 
   return (

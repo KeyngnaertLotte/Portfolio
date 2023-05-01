@@ -47,18 +47,17 @@ export default function Portfolio() {
       description: <p className='font-body'>Op het einde van het eerste jaar MCT kregen we de opdracht om een project te maken aan de hand van alles wat we tot nu toe geleerd hebben en meer. Mijn project is een NightLight. Het is een handig product voor wanneer je in de nacht bijvoorbeeld uit bed wil stappen maar niet eerst 5minuten achter de licht knop wil zoeken in het donker. Je stapt gewoon uit bed en de ledstrip gaat aan. Dit werkt alleen als het donker is maar er is ook mogelijkheid om de ledstrip manueel aan en uit te leggen. Via een website die alleen te bereiken is via het ip adres op het schermpje.
       <br/><br/>
       Voor dit project heb ik gewerkt met html, css, python, javascript en SQL.</p> ,
-      extra: <a href={'https://www.instructables.com/NightLight-1/'} target="_blank" rel="noreferrer" className='flex flex-row gap-2 font-body italic'><Link className='stroke-white w-4'/>Klik hier voor meer details.</a>,
+      extra: <a href={'https://www.instructables.com/NightLight-1/'} target="_blank" rel="noreferrer" className='flex flex-row gap-2 font-body italic focus:text-accent hover:text-accent focus:outline-none'><Link className='stroke-white w-4'/>Klik hier voor meer details.</a>,
     },
     {
       title: 'Hybrid - Photoshop',
       subtitle: 'Gebruik gemaakt van Adobe Photoshop',
       description: <p className='font-body'>De bedoeling was om een realistische hybride te ontwerpen door gebruik te maken van meerdere afbeeldingen van
       dieren. <br/><br/>De Ice Bowl is een mix van een ijsbeer en een uil. En de foto hieronder is een mix van een konijn en een tijger.</p> ,
-      extra: <img src={hybridTinny} alt="" className='w-2/3 rounded-md mx-auto tablet:w-1/2 web:w-2/3 '/>
+      extra: <img src={hybridTinny} alt="een konijn met de vacht van een tijger" className='w-2/3 rounded-md mx-auto tablet:w-1/2 web:w-2/3 '/>
     }
   ]
   const print = (project : number) => {
-    console.log('test')
     if (project === active){
       setActive(0)
     }
@@ -78,6 +77,8 @@ export default function Portfolio() {
     }
   }
 
+
+
   return (
     <main className="flex h-screen w-full flex-col items-center p-4">
       <div className={`bg-black z-20 overflow-hidden flex flex-col ${showNav ? 'translate-x-0 absolute top-0 left-0 h-screen w-screen  p-4' : 'translate-x-full none h-0 w-0  p-0'}`}>
@@ -91,16 +92,16 @@ export default function Portfolio() {
       <div className="flex h-full w-full flex-col items-center text-white mt-8 web:flex-row web:w-11/12 ">
         <div className="grid grid-cols-3 w-full h-1/2 gap-6 items-center web:w-3/5 web:h-full">
           <div className="col-start-1 col-span-1 flex flex-col gap-6 items-end ">
-            <img src={firstProject} alt="ledjes en knopjes in een snoepdoos" tabIndex={0} onClick={() => print(1)} className={`rounded-2xl w-[90%] tablet:w-[70%] web:w-[80%] hover:ring-2 focus:ring-2 ring-accent focus:rounded-2xl focus:outline-none ${active === 1 ? ' opacity-100' :  active === 0 ? ' opacity-100' : 'opacity-50'}`}/>
-            <img src={doubleExposure} tabIndex={0} onClick={() => print(2)} alt="zelfportret met speciale achtergrond en met een speciale foto als omtrek van mijn gezicht" className={`rounded-2xl w-[90%] tablet:w-[70%] web:w-[80%] hover:ring-2 focus:ring-2 ring-accent focus:rounded-2xl focus:outline-none ${active === 2 ? ' opacity-100' :  active === 0 ? 'opacity-100' : 'opacity-50'}`}/>
+            <img src={firstProject} alt="ledjes en knopjes in een snoepdoos" tabIndex={0} onKeyDown={() => print(1)} onClick={() => print(1)} className={`rounded-2xl w-[90%] tablet:w-[70%] web:w-[80%] hover:ring-2 focus:ring-2 ring-accent focus:rounded-2xl focus:outline-none ${active === 1 ? ' opacity-100' :  active === 0 ? ' opacity-100' : 'opacity-50'}`}/>
+            <img src={doubleExposure} tabIndex={0} onKeyDown={() => print(2)}  onClick={() => print(2)} alt="zelfportret met speciale achtergrond en met een speciale foto als omtrek van mijn gezicht" className={`rounded-2xl w-[90%] tablet:w-[70%] web:w-[80%] hover:ring-2 focus:ring-2 ring-accent focus:rounded-2xl focus:outline-none ${active === 2 ? ' opacity-100' :  active === 0 ? 'opacity-100' : 'opacity-50'}`}/>
           </div>
           <div className='col-start-2 col-span-2 flex flex-col gap-6 items-center '>
             <div className='flex flex-row gap-6 items-center justify-center w-[40%] tablet:w-[33%] web:w-[37%]'>
-              <img src={productShowcase} alt="een 3d afbeelding van een metalen doosje" tabIndex={0} onClick={() => print(3)} className={`rounded-2xl hover:ring-2 focus:ring-2 ring-accent focus:rounded-2xl focus:outline-none ${active === 3 ? ' opacity-100' :  active === 0 ? 'opacity-100' : 'opacity-50'}`}/>
-              <img src={projectOne} alt="een bed met een groene ledstrip" tabIndex={0} onClick={() => print(4)} className={`rounded-2xl hover:ring-2 focus:ring-2 ring-accent focus:rounded-2xl focus:outline-none ${active === 4 ? ' opacity-100' :  active === 0 ? 'opacity-100' : 'opacity-50'}`}/>
+              <img src={productShowcase} alt="een 3d afbeelding van een metalen doosje" tabIndex={0} onKeyDown={() => print(3)} onClick={() => print(3)} className={`rounded-2xl hover:ring-2 focus:ring-2 ring-accent focus:rounded-2xl focus:outline-none ${active === 3 ? ' opacity-100' :  active === 0 ? 'opacity-100' : 'opacity-50'}`}/>
+              <img src={projectOne} alt="een bed met een groene ledstrip" tabIndex={0} onKeyDown={() => print(4)} onClick={() => print(4)} className={`rounded-2xl hover:ring-2 focus:ring-2 ring-accent focus:rounded-2xl focus:outline-none ${active === 4 ? ' opacity-100' :  active === 0 ? 'opacity-100' : 'opacity-50'}`}/>
             </div>
             <div className='w-[85%] tablet:w-[72%] flex justify-center web:w-[80%]'>
-              <img src={hybridIceBowl} alt="een dier met het hoofd van een ijsbeer en het lichaam van een uil in de sneeuw" tabIndex={0} onClick={() => print(5)} className={`rounded-2xl hover:ring-2 focus:ring-2 ring-accent focus:rounded-2xl focus:outline-none ${active === 5 ? 'opacity-100' :  active === 0 ? 'opacity-100' : 'opacity-50'}`}/>
+              <img src={hybridIceBowl} alt="een dier met het hoofd van een ijsbeer en het lichaam van een uil in de sneeuw" tabIndex={0} onKeyDown={() => print(4)} onClick={() => print(5)} className={`rounded-2xl hover:ring-2 focus:ring-2 ring-accent focus:rounded-2xl focus:outline-none ${active === 5 ? 'opacity-100' :  active === 0 ? 'opacity-100' : 'opacity-50'}`}/>
             </div>
           </div>
         </div>
