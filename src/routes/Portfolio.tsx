@@ -54,7 +54,7 @@ export default function Portfolio() {
       subtitle: 'Gebruik gemaakt van Adobe Photoshop',
       description: <p className='font-body'>De bedoeling was om een realistische hybride te ontwerpen door gebruik te maken van meerdere afbeeldingen van
       dieren. <br/><br/>De Ice Bowl is een mix van een ijsbeer en een uil. En de foto hieronder is een mix van een konijn en een tijger.</p> ,
-      extra: <img src={hybridTinny} alt="" className='w-2/3 rounded-md mx-auto tablet:w-1/2 web:w-2/3 '/>
+      extra: <img src={hybridTinny} alt="een konijn met de vacht van een tijger" className='w-2/3 rounded-md mx-auto tablet:w-1/2 web:w-2/3 '/>
     }
   ]
   const print = (project : number) => {
