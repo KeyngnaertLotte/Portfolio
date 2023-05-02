@@ -73,7 +73,7 @@ export default () => {
           rel="noreferrer"
           className="flex flex-row justify-start gap-2 font-body italic focus:text-accent focus:outline-none hover:text-accent"
         >
-          <Link className="w-4 stroke-white" /> Vandelanotte Accountancy BVBA in
+          <Link className="w-4 stroke-white" /> Vandelanotte Accountancy BV in
           Kortrijk
         </a>
           </div>
@@ -114,7 +114,7 @@ export default () => {
         <div className="flex flex-col items-start">
           <div className="flex flex-col items-start">
           <h3 className="text-left font-heading text-2xl font-medium">
-          Andere - Occasioneel
+          Opaasen - Occasioneel
         </h3>
         <p className="mb-4 font-body font-light">van 2017 - heden</p>
           </div>
