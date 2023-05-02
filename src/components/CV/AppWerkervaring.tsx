@@ -114,7 +114,7 @@ export default () => {
         <div className="flex flex-col items-start">
           <div className="flex flex-col items-start">
           <h3 className="text-left font-heading text-2xl font-medium">
-          Opaasen - Occasioneel
+          Oppassen - Occasioneel
         </h3>
         <p className="mb-4 font-body font-light">van 2017 - heden</p>
           </div>
