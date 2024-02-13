@@ -52,7 +52,10 @@ export default function Cv() {
         <h1 className='text-white font-heading font-bold text-4xl'>Lotte Keyngnaert</h1>
         {isMobile ? <button className='self-start' tabIndex={-1} onClick={showNavigation}><Menu className='stroke-white' size={60}/></button> : <AppNavigation /> }
       </div>
-     <AppComputervaardigheden/>
+     {/* <AppComputervaardigheden/> */}
+     <div className='h-4/5 w-full'>
+      <AppComputervaardigheden/>
+     </div>
       </div>
     </main>
   )

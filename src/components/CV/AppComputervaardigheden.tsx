@@ -3,8 +3,8 @@ import { Languages, Code2, Paintbrush, LayoutGrid } from 'lucide-react'
 export default () => {
   return (
     
-    <div className="flex h-full flex-col items-center text-white mt-10 tablet:h-4/5  web:w-1/5 web:max-h-screen">
-      <h2 className=" text-center font-heading text-[1.7rem] font-medium leading-8 tablet:text-4xl web:m-8 ">
+    <div className="flex h-full flex-col items-center mt-10 text-white  tablet:h-4/5  web:w-1/5 web:h-full">
+      <h2 className="text-center font-heading  font-medium leading-8 tablet:text-2xl web:m-4 ">
         Vaardigheden
       </h2>
       <div className="h-screen overflow-y-auto flex px-4 flex-col justify-center items-center tablet:flex-wrap tablet:flex-row tablet:h-fit tablet:mt-24  web:h-auto web:w-full web:mt-0">
