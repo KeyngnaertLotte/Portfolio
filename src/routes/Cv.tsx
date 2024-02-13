@@ -53,8 +53,19 @@ export default function Cv() {
         {isMobile ? <button className='self-start' tabIndex={-1} onClick={showNavigation}><Menu className='stroke-white' size={60}/></button> : <AppNavigation /> }
       </div>
      {/* <AppComputervaardigheden/> */}
-     <div className='h-4/5 w-full'>
+     <div className='h-4/5 w-full flex flex-row'>
       <AppComputervaardigheden/>
+      <div className='w-4/5 mt-10'>
+        <div>
+        <button className="text-white font-heading text-3xl font-medium tablet:text-2xl">Opleiding</button>
+        <button className="text-white font-heading text-3xl font-medium tablet:text-2xl">WerkErvaring</button>
+        <input type="radio" value="hahhofisodf" />
+        </div>
+        <div className='h-full'>
+
+        <AppOpleiding/>
+        </div>
+      </div>
      </div>
       </div>
     </main>
