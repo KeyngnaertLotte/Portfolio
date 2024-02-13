@@ -52,13 +52,7 @@ export default function Cv() {
         <h1 className='text-white font-heading font-bold text-4xl'>Lotte Keyngnaert</h1>
         {isMobile ? <button className='self-start' tabIndex={-1} onClick={showNavigation}><Menu className='stroke-white' size={60}/></button> : <AppNavigation /> }
       </div>
-      {active === 0 ? <AppOpleiding/> : active === 1 ? <AppWerkervaring/> : <AppComputervaardigheden/>}
-      <div className='flex flex-row gap-4 mb-8  items-center'>
-       <button className={`w-24 h-1 rounded active:bg-white focus:outline-none focus:ring-accent focus:ring-2 ${active === 0 ? `bg-white` : 'bg-gray-400'}`} onClick={() => {setActive(0), setPauseTimer(true)}}/>
-       <button className={`w-24 h-1 rounded active:bg-white focus:outline-none focus:ring-accent focus:ring-2 ${active === 1 ? `bg-white` : 'bg-gray-400'}`} onClick={() => {setActive(1), setPauseTimer(true)}}/>
-       <button className={`w-24 h-1 rounded active:bg-white focus:outline-none focus:ring-accent focus:ring-2 ${active === 2 ? `bg-white` : 'bg-gray-400'}`} onClick={() => {setActive(2), setPauseTimer(true)}}/>
-        <a href={cvLotte} download="CV_LotteKeyngnaert" className='absolute hidden tablet:block tablet:right-[10%] web:right-[15%] text-white focus:text-accent hover:text-accent focus:outline-none'>Download cv</a>
-     </div>
+     <AppComputervaardigheden/>
       </div>
     </main>
   )
