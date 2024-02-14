@@ -1,14 +1,28 @@
 import { Link } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default () => {
   const [selectedYear, setSelectedYear] = useState(2023)
+  const [pauseTime, setPauseTime] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (pauseTime) {
+        setSelectedYear((prev) => (prev === 2017 ? 2023 : prev - 1))
+      }
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [pauseTime])
+
+
 
   const handleRadioChange = (value: any, textColor: any) => {
     setSelectedYear(value)
     console.log('Selected Year:', value)
     console.log('Text Color:', textColor)
   }
+ 
 
   const jobs = [
     {
@@ -47,12 +61,14 @@ export default () => {
         "2 weken in maart. Vroeg gestopt door corona. Logo's ontwerpen, video's maken in After Effects, enz.",
     },
     {
-      year: '2018 - heden',
+      year: 2017,
       job: 'Oppassen',
       company: 'Diversen, Westhoek',
       description: 'Leeftijden van 1 jaar tot 12 jaar.',
     },
   ]
+
+  const years = [2023, 2022, 2021, 2020, 2019, 2018, 2017]
 
   return (
     <div className="flex h-full w-full items-center justify-center pt-4 font-body text-white">
@@ -66,7 +82,7 @@ export default () => {
         <div className="col-span-1 col-start-1 row-span-1 row-start-7 h-4 w-4 justify-self-center rounded-full bg-[#B27F00]"></div>
         <div className="col-span-1 col-start-1 row-span-1 row-start-8 h-4 w-4 justify-self-center rounded-full bg-[#B27F00]"></div>
 
-        {[2023, 2022, 2021, 2020, 2019, 2018, '2018 - heden'].map(
+        {years.map(
           (year, index) => (
             <label
               key={index}
@@ -80,10 +96,11 @@ export default () => {
                 type="radio"
                 value={year}
                 className="sr-only"
-                onChange={() => handleRadioChange(year, '#B27F00')}
+                onChange={ ()=> handleRadioChange(year, '#B27F00')}
+                onClick={()=> setPauseTime(false)}
                 checked={selectedYear === year}
               />
-              <span className="">{year}</span>
+              <span className="">{(year === 2017 ? '2018 - heden' : year)}</span>
             </label>
           ),
         )}

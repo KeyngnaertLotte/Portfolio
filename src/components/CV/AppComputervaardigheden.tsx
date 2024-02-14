@@ -17,7 +17,7 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -27,17 +27,17 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
             <p>Frans</p>
             <div className='flex flex-row gap-1'>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -60,7 +60,7 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -69,8 +69,8 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -78,9 +78,9 @@ export default () => {
             <div className='flex flex-row gap-1'>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -89,28 +89,28 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
             <p>C#</p>
             <div className='flex flex-row gap-1'>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
             <p>C++</p>
             <div className='flex flex-row gap-1'>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -119,8 +119,8 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
         </div>
@@ -132,8 +132,8 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -142,8 +142,8 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -151,9 +151,9 @@ export default () => {
             <div className='flex flex-row gap-1'>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -163,7 +163,7 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -171,9 +171,9 @@ export default () => {
             <div className='flex flex-row gap-1'>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -182,8 +182,8 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
         </div>
@@ -195,8 +195,8 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -205,8 +205,8 @@ export default () => {
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
           <div className='flex flex-row justify-between items-center'>
@@ -214,9 +214,9 @@ export default () => {
             <div className='flex flex-row gap-1'>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
               <div className='w-3 h-3 bg-[#B27F00] rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
-              <div className='w-3 h-3 bg-white rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
+              <div className='w-3 h-3 bg-white opacity-30 rounded-xl'></div>
             </div>
           </div>
         </div>

@@ -88,6 +88,7 @@ export default function Cv() {
           </div>
         </div>
       </div>
+      <a href={cvLotte} download="CV_LotteKeyngnaert" className='text-white font-body absolute bottom-5 right-10'>Download CV</a>
     </main>
   );
 }
