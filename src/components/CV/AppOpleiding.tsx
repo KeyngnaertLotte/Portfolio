@@ -5,7 +5,7 @@ import HorizontalLine from './HorizontalLine';
 export default () => {
   return (
     <div className='h-full w-full flex items-center justify-center pt-4 text-white font-body'>
-      <div className='w-[70%] grid grid-rows-5 grid-cols-7 grid-cols-10px grid-rows-10px ml-4 justify-items-center content-end gap-0 gap-y-4'> 
+      <div className='w-[70%] grid grid-rows-15 grid-cols-15 grid-cols-10px grid-rows-10px ml-4 justify-items-center content-end gap-0 gap-y-4'> 
       <div className="col-start-1 col-span-1 row-span-5 row-start-1   w-2 rounded-full bg-[#B27F00]"></div>
       <div className=" h-4 w-4 rounded-full bg-[#B27F00]  col-span-1 col-start-1 row-span-1 row-start-2"></div>
         <div className="h-4 w-4 rounded-full bg-[#B27F00] col-span-1 col-start-1 row-span-1 row-start-3"></div>
