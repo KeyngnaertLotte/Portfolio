@@ -71,8 +71,8 @@ export default () => {
   const years = [2023, 2022, 2021, 2020, 2019, 2018, 2017]
 
   return (
-    <div className="flex h-full w-full items-center justify-center pt-4 font-body text-white">
-      <div className="grid-rows-10 grid h-full w-[20%]  justify-items-start">
+    <div className="flex h-full w-full  items-center justify-center pt-4 font-body text-white">
+      <div className="grid-rows-10 grid h-screen tablet:h-full w-[20%]  justify-items-start web:gap-0 gap-x-2">
         <div className="col-span-1 col-start-1 row-start-1 row-end-9 w-2 justify-self-center rounded-full bg-[#B27F00]"></div>
         <div className="col-span-1 col-start-1 row-span-1 row-start-2 h-4 w-4 justify-self-center rounded-full bg-[#B27F00]"></div>
         <div className="col-span-1 col-start-1 row-span-1 row-start-3  h-4 w-4 justify-self-center rounded-full bg-[#B27F00]"></div>
@@ -106,8 +106,8 @@ export default () => {
         )}
       </div>
 
-      <div className="h-full w-[40%]">
-        <div className="flex h-full w-full flex-col items-start justify-center gap-6">
+      <div className="h-full w-[60%] tablet:w-[40%]">
+        <div className="flex h-full w-full flex-col items-start justify-center gap-6 pl-6 tablet:pl-0">
           {jobs.map(
             (job, index) =>
               (Array.isArray(job.year)

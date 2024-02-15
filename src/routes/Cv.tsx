@@ -52,11 +52,11 @@ export default function Cv() {
             <AppNavigation />
           )}
         </div>
-        <div className="flex h-[85%] w-full flex-row">
+        <div className="flex h-[85%] w-screen flex-col my-auto web:my-0 tablet:flex-row">
           <AppComputervaardigheden />
-          <div className="mt-10 w-4/5">
-            <div className="flex w-fit mx-auto rounded flex-row items-center justify-center bg-zinc-900 divide-x-2 divide-zinc-700">
-              <label className="cursor-pointer px-3">
+          <div className="tablet:mt-10 tablet:w-4/5 w-screen mt-20 flex flex-col tablet:items-start justify-center items-center">
+            <div className="flex tablet:w-fit w-[90%] mx-0 tablet:mx-auto rounded flex-col tablet:flex-row  items-center justify-center bg-zinc-900 divide-y-2 tablet:divide-y-0 tablet:divide-x-2 divide-zinc-700">
+              <label className="cursor-pointer tablet:px-3 py-3">
                 <input
                   type="radio"
                   value="opleiding"
@@ -68,7 +68,7 @@ export default function Cv() {
                   Opleiding
                 </span>
               </label>
-              <label className="cursor-pointer px-3">
+              <label className="cursor-pointer tablet:px-3 py-3">
                 <input
                   type="radio"
                   value="werkervaring"
@@ -81,14 +81,14 @@ export default function Cv() {
                 </span>
               </label>
             </div>
-            <div className="h-full">
+            <div className="h-fit tablet:h-full mt-5 tablet:mt-0 w-full">
               {selectedTab === 'opleiding' && <AppOpleiding />}
               {selectedTab === 'werkervaring' && <AppWerkervaring />}
             </div>
           </div>
         </div>
       </div>
-      <a href={cvLotte} download="CV_LotteKeyngnaert" className='text-white font-body absolute bottom-5 right-10'>Download CV</a>
+      <a href={cvLotte} download="CV_LotteKeyngnaert" className='fixed z-10 text-white font-body tablet:absolute bottom-5 right-10'>Download CV</a>
     </main>
   );
 }
